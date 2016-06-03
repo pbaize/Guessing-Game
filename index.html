@@ -40,26 +40,27 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>??</h1>
-        <p>Guess a number from 0 - 100</p>
+        <h1 id="guessGoesHere">??</h1>
+        <p id="tagline">Guess a number from 1 - 100</p>
         <div class="row row-centered">
         <div class="col-lg-6 col-centered">
           <div class="input-group">
-            <input type="number" max="100" min="0" class="form-control" id="guess" placeholder="Your Guess" autofocus required>
+            <input id="guess" type="number" max="100" min="1" class="form-control" placeholder="Your Guess" autofocus required>
               <span class="input-group-btn">
-                <button class="btn btn-primary" type="button">Guess!</button>
+                <button id="submit-guess" class="btn btn-primary" type="button">Guess!</button>
               </span>
           </div><!-- /input-group -->
         </div>
         </div>
+        <p id='guesslog'>guesslog</p>
       </div>
     </div>
 
     <div class="container">
       <div class="row row-centered">
             <div class="btn-block">
-              <button type="button" class="btn btn-danger">Start Over</button>
-              <button type="button" class="btn btn-default">Hint</button>
+              <button id="reset" type="button" class="btn btn-danger">Start Over</button>
+              <button id="hint" type="button" class="btn btn-default">Hint</button>
             </div>
           </div>
       </div>
@@ -73,10 +74,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bootstrap/js/jquery.min.js"><\/script>')</script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="guessingGame.js"></script>
   </body>
 </html>

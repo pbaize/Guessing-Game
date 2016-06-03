@@ -29,3 +29,11 @@ body {
 #guess {
 	autofocus: ;
 }
+.correct {
+	color: green;
+}
+#guesslog {
+	visibility: hidden;
+	font-size: 12px;
+	font-color: #D9534F;
+}
