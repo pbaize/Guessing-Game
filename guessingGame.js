@@ -1,6 +1,10 @@
 /* **** Global Variables **** */
 // try to elminate these global variables in your project, these are here just to start.
 
+// How can you eliminate global variables?
+// I'd suggesting using the IIFE pattern (Immediately Invoked Function Expression), here is a resource
+// about the IFFE pattern, see if you can implement it in this file! http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+
 var winningNumber = generateWinningNumber();
 var guesses = [];
 
